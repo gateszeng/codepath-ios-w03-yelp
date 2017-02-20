@@ -2,7 +2,7 @@
 
 **Holler** is a Yelp search app using the [Yelp API](http://www.yelp.com/developers/documentation/v2/search_api).
 
-Time spent: **2.5** hours spent in total
+Time spent: **3.5** hours spent in total
 
 ## User Stories
 
@@ -10,7 +10,7 @@ The following **required** functionality is completed:
 
 - [x] Table rows for search results should be dynamic height according to the content height.
 - [x] Custom cells should have the proper Auto Layout constraints.
-- [ ] Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does).
+- [x] Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does).
 
 The following **optional** features are implemented:
 
@@ -22,17 +22,18 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
+- [x] Set the color of the navigation bar and added cancel button
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
-2. 
+1. I would like to talk about good procedures to set constraints.
+2. I would like to discuss the difference between content hugging priority and content compression priority.
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/gylmbha.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -40,6 +41,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 I faced a compiler error that said "Class 'BusinessCell' has no initializers". I had never faced this compiler error before and it took me a while to figure out that the business object that we created must be force unwrapped.
+Additionally, there was an inconsistancy between the video and this version of iOS, since we did not need to implement 'preferredMaxLayoutWidth' and 'layoutSubviews' anymore.
 
 ## License
 
